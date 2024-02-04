@@ -1,11 +1,11 @@
 ﻿CREATE PROCEDURE [dbo].[spUser_Update]
 	@Id int,
-	@FName nvarchar(50),
-	@LName nvarchar(50),
+	@FirstName nvarchar(50),
+	@LastName nvarchar(50),
 	@Age int NULL
 AS
 BEGIN
 	UPDATE [User] 
-	SET FirstName = @FName, LastName = @LName, Age = @Age 
+	SET FirstName = @FirstName, LastName = @LastName, Age = @Age 
 	WHERE Id=@Id;
 END
